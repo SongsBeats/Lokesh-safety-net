@@ -3,52 +3,54 @@ import { Link } from 'react-router-dom';
 import { FaCheck, FaChevronRight } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
+const imagePath = (fileName) => `${import.meta.env.BASE_URL}images/${fileName}`;
+
 const Services = () => {
   const servicesList = [
     {
-      image: '/images/balcony_safety_net.png',
+      image: imagePath('balcony_safety_net.png'),
       name: 'Balcony Safety Nets',
       desc: 'Durable nylon safety nets for apartments and homes. Prevents accidental falls and keeps your balcony secure. Highly recommended for multi-story residential buildings in Chennai.',
       features: ['UV-resistant material', 'Custom-fit installation', 'Invisible appearance', 'Maintenance-free'],
     },
     {
-      image: '/images/pigeon_net.png',
+      image: imagePath('pigeon_net.png'),
       name: 'Pigeon & Bird Control Nets',
       desc: 'Effective anti-bird nets that humanely prevent pigeons and other birds from nesting on balconies, terraces, and AC units. Keeps your living spaces hygienic and clean.',
       features: ['Bird-friendly (no harm)', 'Weatherproof', 'High tensile strength', 'Long-lasting'],
     },
     {
-      image: '/images/invisible_grill.png',
+      image: imagePath('invisible_grill.png'),
       name: 'Invisible Grills',
       desc: 'Modern stainless steel cable grills that offer safety without obstructing your view. Ideal for balconies and windows, providing a clean architectural finish.',
       features: ['Stainless steel SS316', 'Transparent look', 'Wind & rust resistant', 'Child-safe spacing'],
     },
     {
-      image: '/images/children_safety_net.png',
+      image: imagePath('children_safety_net.png'),
       name: 'Children Safety Nets',
       desc: 'Specially designed nets to protect children from falling through railings, stairways, and open areas. Ensures safe playtime zones around balconies.',
       features: ['Soft yet strong mesh', 'Child-safe materials', 'Aesthetic blending options', 'Custom sizing'],
     },
     {
-      image: '/images/pet_safety_net.png',
+      image: imagePath('pet_safety_net.png'),
       name: 'Pet Safety Nets',
       desc: 'Secure nets that prevent pets from escaping through windows or balconies. Safe for cats, dogs, and small animals. Made from durable scratch-resistant fibers.',
       features: ['Tangle-resistant', 'Pet-friendly material', 'Easy cleaning', 'Custom sizes'],
     },
     {
-      image: '/images/pool_safety_net.png',
+      image: imagePath('pool_safety_net.png'),
       name: 'Swimming Pool Safety Nets',
       desc: 'Safety covers and nets for swimming pools to prevent accidental drowning, especially for children. Extremely strong load-bearing meshes custom fitted to pool contours.',
       features: ['Load-bearing strength', 'UV stable', 'Easy install/remove', 'Weatherproof'],
     },
     {
-      image: '/images/staircase_safety_net.png',
+      image: imagePath('staircase_safety_net.png'),
       name: 'Staircase Safety Nets',
       desc: 'Protective nets installed along staircases to prevent children and pets from falling between banisters. Ideal for schools, offices, and duplex homes.',
       features: ['Seamless fit', 'Strong nylon', 'Aesthetic options', 'Quick installation'],
     },
     {
-      image: '/images/industrial_safety_net.png',
+      image: imagePath('industrial_safety_net.png'),
       name: 'Industrial Safety Nets',
       desc: 'Heavy-duty nets for construction sites, factories, and warehouses. Protects workers from falling debris and complies fully with industrial building safety standards.',
       features: ['High load capacity', 'HDPE material', 'Fire-retardant options', 'IS standard compliant'],

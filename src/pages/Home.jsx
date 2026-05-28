@@ -9,6 +9,8 @@ import { Autoplay, FreeMode } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 
+const imagePath = (fileName) => `${import.meta.env.BASE_URL}images/${fileName}`;
+
 // Count-up helper component that starts when scrolled into view
 const StatCounter = ({ target, suffix = '', duration = 1500 }) => {
   const [count, setCount] = useState(0);
@@ -52,12 +54,12 @@ const Home = () => {
   ];
 
   const serviceOverview = [
-    { image: '/images/balcony_safety_net.png', name: 'Balcony Safety Nets', desc: 'Premium durable nylon safety nets preventing falls and securing balconies.' },
-    { image: '/images/pigeon_net.png', name: 'Pigeon & Bird Control Nets', desc: 'Humane bird prevention systems for balconies, terraces, and AC units.' },
-    { image: '/images/invisible_grill.png', name: 'Invisible Grills', desc: 'SS316 steel cable safety grills keeping panoramic views completely open.' },
-    { image: '/images/children_safety_net.png', name: 'Children Safety Nets', desc: 'Reinforced fall prevention nets for banisters, stairways, and windows.' },
-    { image: '/images/pet_safety_net.png', name: 'Pet Safety Nets', desc: 'Strong, chew-resistant guards ensuring safety for cats, dogs, and birds.' },
-    { image: '/images/industrial_safety_net.png', name: 'Industrial Safety Nets', desc: 'Heavy load-bearing debris nets for construction sites and warehouses.' },
+    { image: imagePath('balcony_safety_net.png'), name: 'Balcony Safety Nets', desc: 'Premium durable nylon safety nets preventing falls and securing balconies.' },
+    { image: imagePath('pigeon_net.png'), name: 'Pigeon & Bird Control Nets', desc: 'Humane bird prevention systems for balconies, terraces, and AC units.' },
+    { image: imagePath('invisible_grill.png'), name: 'Invisible Grills', desc: 'SS316 steel cable safety grills keeping panoramic views completely open.' },
+    { image: imagePath('children_safety_net.png'), name: 'Children Safety Nets', desc: 'Reinforced fall prevention nets for banisters, stairways, and windows.' },
+    { image: imagePath('pet_safety_net.png'), name: 'Pet Safety Nets', desc: 'Strong, chew-resistant guards ensuring safety for cats, dogs, and birds.' },
+    { image: imagePath('industrial_safety_net.png'), name: 'Industrial Safety Nets', desc: 'Heavy load-bearing debris nets for construction sites and warehouses.' },
   ];
 
   const serviceAreas = [
@@ -68,16 +70,16 @@ const Home = () => {
   ];
 
   const projects = [
-    { id: 1, url: '/images/balcony_safety_net.png', alt: 'Balcony Safety Net Installation' },
-    { id: 2, url: '/images/pigeon_net.png', alt: 'Pigeon Bird Control Netting' },
-    { id: 3, url: '/images/invisible_grill.png', alt: 'Invisible Steel Grill' },
-    { id: 4, url: '/images/children_safety_net.png', alt: 'Staircase Children Safety Net' },
-    { id: 5, url: '/images/pet_safety_net.png', alt: 'Pet Safety Netting' },
-    { id: 6, url: '/images/pool_safety_net.png', alt: 'Swimming Pool Safety Netting' },
-    { id: 7, url: '/images/staircase_safety_net.png', alt: 'Building Staircase Netting' },
-    { id: 8, url: '/images/industrial_safety_net.png', alt: 'Warehouse Industrial Safety Net' },
-    { id: 9, url: '/images/project_balcony.png', alt: 'Balcony Net Installation' },
-    { id: 10, url: '/images/project_window.png', alt: 'Window Bird Protection' },
+    { id: 1, url: imagePath('balcony_safety_net.png'), alt: 'Balcony Safety Net Installation' },
+    { id: 2, url: imagePath('pigeon_net.png'), alt: 'Pigeon Bird Control Netting' },
+    { id: 3, url: imagePath('invisible_grill.png'), alt: 'Invisible Steel Grill' },
+    { id: 4, url: imagePath('children_safety_net.png'), alt: 'Staircase Children Safety Net' },
+    { id: 5, url: imagePath('pet_safety_net.png'), alt: 'Pet Safety Netting' },
+    { id: 6, url: imagePath('pool_safety_net.png'), alt: 'Swimming Pool Safety Netting' },
+    { id: 7, url: imagePath('staircase_safety_net.png'), alt: 'Building Staircase Netting' },
+    { id: 8, url: imagePath('industrial_safety_net.png'), alt: 'Warehouse Industrial Safety Net' },
+    { id: 9, url: imagePath('project_balcony.png'), alt: 'Balcony Net Installation' },
+    { id: 10, url: imagePath('project_window.png'), alt: 'Window Bird Protection' },
   ];
 
   const heroHeading = "Chennai's Trusted Safety Net & Invisible Grill Specialists";
