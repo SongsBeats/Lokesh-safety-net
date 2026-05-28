@@ -59,9 +59,9 @@ const About = () => {
               className="lg:col-span-6"
             >
               <img
-                src={imagePath('project_balcony.png')}
-                alt="Lokesh Safety Nets balcony safety net installation"
-                className="w-full aspect-[5/4] object-cover rounded-3xl shadow-weightless border border-navy-150"
+                src={imagePath('about_lokesh_safety_nets.png')}
+                alt="Lokesh Safety Nets Chennai services overview"
+                className="w-full aspect-square object-contain rounded-3xl shadow-weightless border border-navy-150 bg-white"
               />
             </motion.div>
 
