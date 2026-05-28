@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { FaShieldAlt, FaTools, FaHandHoldingUsd, FaUserShield, FaCheckCircle, FaClock, FaMapMarkerAlt, FaChevronRight } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
+const imagePath = (fileName) => `${import.meta.env.BASE_URL}images/${fileName}`;
+
 const About = () => {
   const coreValues = [
     {
@@ -57,9 +59,9 @@ const About = () => {
               className="lg:col-span-6"
             >
               <img
-                src="https://placehold.co/500x400/0B1F4B/F97316?text=Our+Team"
-                alt="Lokesh Safety Nets Team"
-                className="w-full rounded-3xl shadow-weightless border border-navy-150"
+                src={imagePath('project_balcony.png')}
+                alt="Lokesh Safety Nets balcony safety net installation"
+                className="w-full aspect-[5/4] object-cover rounded-3xl shadow-weightless border border-navy-150"
               />
             </motion.div>
 
